@@ -1,0 +1,16 @@
+---
+profile: safety
+
+exclude_paths:
+  - ../.cache/
+  - ../gitops/
+  - ../tests/
+  - ../.config/
+
+parseable: true
+strict: true
+
+use_default_rules: true
+
+rulesdir:
+  - ../tests/rules/
