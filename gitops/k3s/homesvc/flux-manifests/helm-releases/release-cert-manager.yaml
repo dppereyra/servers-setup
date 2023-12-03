@@ -14,6 +14,9 @@ spec:
         kind: HelmRepository
         name: jetstack
         namespace: flux-system
+  targetNamespace: cert-manager
+  install:
+    createNamespace: true
   interval: 1m
   values:
     - --set installCRDs=true
