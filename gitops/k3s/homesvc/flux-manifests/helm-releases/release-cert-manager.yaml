@@ -27,6 +27,6 @@ spec:
       enabled: true
       servicemonitor:
         enabled: true
-          namespace: monitoring
-          interval: 30s
-          scrapeTimeout: 10s
+        namespace: monitoring
+        interval: 30s
+        scrapeTimeout: 10s
