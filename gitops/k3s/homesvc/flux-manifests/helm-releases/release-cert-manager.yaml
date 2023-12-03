@@ -17,7 +17,11 @@ spec:
   targetNamespace: cert-manager
   install:
     createNamespace: true
+    retries: 10
   interval: 1m
+  dependsOn:
+    - name: promstack
+      namespace: flux-system
   values:
     - --set installCRDs=true
     - --set prometheus.enabled=true
