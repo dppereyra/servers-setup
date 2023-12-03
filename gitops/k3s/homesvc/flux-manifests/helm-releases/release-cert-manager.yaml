@@ -17,15 +17,16 @@ spec:
   targetNamespace: cert-manager
   install:
     createNamespace: true
-    retries: 10
   interval: 1m
   dependsOn:
     - name: promstack
       namespace: flux-system
   values:
-    - --set installCRDs=true
-    - --set prometheus.enabled=true
-    - --set prometheus.servicemonitor.enabled=true
-    - --set prometheus.servicemonitor.namespace=monitoring
-    - --set prometheus.servicemonitor.interval=30s
-    - --set prometheus.servicemonitor.scrapeTimeout=10s
+    installCRDs: true
+    prometheus:
+      enabled: true
+      servicemonitor:
+        enabled: true
+          namespace: monitoring
+          interval: 30s
+          scrapeTimeout: 10s
