@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
   # Folders
   - helm-repositories
-  - ./helm-releases/
+  - helm-releases
   # Files
   - locations.yaml
