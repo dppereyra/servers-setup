@@ -6,6 +6,7 @@ exclude_paths:
   - ../gitops/
   - ../tests/
   - ../.config/
+  - ../manifests/
 
 parseable: true
 strict: true
