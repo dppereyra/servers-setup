@@ -10,4 +10,4 @@ spec:
     kind: GitRepository
     name: flux-system
   prune: true
-  interval: 5m
+  interval: 1m
