@@ -1,0 +1,31 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: haproxy-ingress
+  namespace: flux-system
+spec:
+  releaseName: haproxy-ingress
+  chart:
+    spec:
+      chart: haproxy-ingress
+      version: 0.14.5
+      sourceRef:
+        kind: HelmRepository
+        name: haproxy-ingress
+        namespace: flux-system
+  targetNamespace: ingress
+  install:
+    createNamespace: true
+  interval: 1m
+  values:
+    controller:
+      hostNetwork: true
+      ingressClassResource:
+        enabled: true
+      logs:
+        enabled: true
+      stats:
+        enabled: true
+      metrics:
+        enabled: true

@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   - release-cert-manager.yaml
   - release-promstack.yaml
+  - release-stackgres-operator.yaml
+  - release-haproxy-ingress.yaml
