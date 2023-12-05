@@ -1,2 +1,6 @@
 # Editor/IDE Artefacts
 .history/
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
