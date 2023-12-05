@@ -6,3 +6,4 @@ resources:
   - repo-prometheus-community.yaml
   - repo-stackgres.yaml
   - repo-haproxy-ingress.yaml
+  - repo-traefik.yaml

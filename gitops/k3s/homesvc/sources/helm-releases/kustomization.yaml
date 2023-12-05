@@ -6,3 +6,4 @@ resources:
   - release-promstack.yaml
   - release-stackgres-operator.yaml
   - release-haproxy-ingress.yaml
+  - release-traefik.yaml
