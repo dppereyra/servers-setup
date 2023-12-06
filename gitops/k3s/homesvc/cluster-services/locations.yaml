@@ -5,7 +5,7 @@ metadata:
   name: manifests-common
   namespace: flux-system
 spec:
-  path: "./manifests/common"
+  path: "./manifests/base"
   sourceRef:
     kind: GitRepository
     name: flux-system
